@@ -1,0 +1,30 @@
+PODS:
+  - Realm (4.1.1):
+    - Realm/Headers (= 4.1.1)
+  - Realm/Headers (4.1.1)
+  - RealmSwift (4.1.1):
+    - Realm (= 4.1.1)
+  - TensorFlowLiteC (2.0.0)
+  - TensorFlowLiteSwift (2.0.0):
+    - TensorFlowLiteC (= 2.0.0)
+
+DEPENDENCIES:
+  - RealmSwift
+  - TensorFlowLiteSwift
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+
+SPEC CHECKSUMS:
+  Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
+  RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
+  TensorFlowLiteC: d22a94f77938edb2dfcb9674937f9548a3fcdb23
+  TensorFlowLiteSwift: dcd91bd74091f8e3e1b9b28a7d789f635dc26bea
+
+PODFILE CHECKSUM: 4b5e92444209ea4653ee038c3722363330baa3ca
+
+COCOAPODS: 1.9.0

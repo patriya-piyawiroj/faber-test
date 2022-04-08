@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C85DFB44F6DEA92ACB6621E /* Pods_Faber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED90393411DFD1AF673CB33 /* Pods_Faber.framework */; };
+		8900516223E137ED001DCC89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8900516123E137ED001DCC89 /* GoogleService-Info.plist */; };
+		890E2C9523E163930034CE72 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E2C9423E163930034CE72 /* ProfileViewController.swift */; };
+		890E2C9723E1672A0034CE72 /* FirebaseDiscoveryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E2C9623E1672A0034CE72 /* FirebaseDiscoveryDataProvider.swift */; };
+		890E2C9A23E16AD60034CE72 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E2C9923E16AD60034CE72 /* Dependencies.swift */; };
+		891A468D2431AEA600444884 /* CameraInferenceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A468C2431AEA600444884 /* CameraInferenceLabel.swift */; };
+		891A468F2431B45C00444884 /* CameraInferenceStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A468E2431B45C00444884 /* CameraInferenceStackView.swift */; };
+		891D9B1223F12AAE004CA378 /* FaberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D9B1123F12AAE004CA378 /* FaberButton.swift */; };
+		891D9B3923F13EE0004CA378 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D9B3823F13EE0004CA378 /* CVPixelBufferExtension.swift */; };
+		891D9B4823F13F3A004CA378 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 891D9B4623F13F39004CA378 /* labels.txt */; };
+		891D9B4923F13F3A004CA378 /* mobilenet_quant_v1_224.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 891D9B4723F13F39004CA378 /* mobilenet_quant_v1_224.tflite */; };
+		891D9B4B23F13F3F004CA378 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D9B4A23F13F3F004CA378 /* ModelDataHandler.swift */; };
+		8933F5F423C1453600A58D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F5F323C1453600A58D99 /* AppDelegate.swift */; };
+		8933F5F823C1453600A58D99 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F5F723C1453600A58D99 /* CameraViewController.swift */; };
+		8933F5FD23C1453600A58D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8933F5FC23C1453600A58D99 /* Assets.xcassets */; };
+		8933F60023C1453600A58D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8933F5FE23C1453600A58D99 /* LaunchScreen.storyboard */; };
+		8933F60B23C1453600A58D99 /* FaberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F60A23C1453600A58D99 /* FaberTests.swift */; };
+		8933F61C23C1584700A58D99 /* DiscoveryRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F61B23C1584700A58D99 /* DiscoveryRootViewController.swift */; };
+		8933F61F23C19B7B00A58D99 /* DiscoveryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F61E23C19B7B00A58D99 /* DiscoveryHeaderView.swift */; };
+		8933F62223C19DB500A58D99 /* MockDiscoveryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F62123C19DB500A58D99 /* MockDiscoveryDataProvider.swift */; };
+		893A9EF823F0EFA100702079 /* YelpDiscoveryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A9EF723F0EFA100702079 /* YelpDiscoveryDataProvider.swift */; };
+		893CEA482478BD74006291ED /* TasteDiscoveryNetworkSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CEA472478BD74006291ED /* TasteDiscoveryNetworkSource.swift */; };
+		893CEA4C2478C232006291ED /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CEA4B2478C232006291ED /* NetworkConstants.swift */; };
+		893CEA4E2478D794006291ED /* TasteDiscoveryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CEA4D2478D794006291ED /* TasteDiscoveryModel.swift */; };
+		893CEA502478DCE4006291ED /* TasteSwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893CEA4F2478DCE4006291ED /* TasteSwipeCardView.swift */; };
+		8948099323E29CFE00C20295 /* DiscoveryRecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8948099223E29CFE00C20295 /* DiscoveryRecommendationModel.swift */; };
+		8956020423C1B413009850F9 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956020323C1B413009850F9 /* ImageCollectionView.swift */; };
+		8956020823C1CAB8009850F9 /* DiscoveryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956020723C1CAB8009850F9 /* DiscoveryListViewController.swift */; };
+		8956020A23C1CB91009850F9 /* DiscoveryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956020923C1CB91009850F9 /* DiscoveryDataProvider.swift */; };
+		8956D98F241E066700D732C7 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956D98E241E066700D732C7 /* Log.swift */; };
+		895F6AAB2427FC4700EF2580 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895F6AAA2427FC4700EF2580 /* CameraManager.swift */; };
+		895F6AAD2427FF9500EF2580 /* CameraManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895F6AAC2427FF9500EF2580 /* CameraManagerDelegate.swift */; };
+		895F6AAF242813DD00EF2580 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895F6AAE242813DD00EF2580 /* CameraPreviewView.swift */; };
+		89610883243123D600227456 /* CameraDummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89610882243123D600227456 /* CameraDummyViewController.swift */; };
+		8961088824312B6F00227456 /* CameraTFHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961088724312B6F00227456 /* CameraTFHandler.swift */; };
+		8961088A2431362800227456 /* CompletionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896108892431362800227456 /* CompletionResult.swift */; };
+		89796D0D23E14A6C00B20F00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89796D0C23E14A6C00B20F00 /* User.swift */; };
+		89796D1523E14FCF00B20F00 /* UIView+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89796D1423E14FCF00B20F00 /* UIView+Sizing.swift */; };
+		89796D1923E150B800B20F00 /* GCD+DispatchAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89796D1823E150B800B20F00 /* GCD+DispatchAfter.swift */; };
+		89796D1B23E1515100B20F00 /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89796D1A23E1515100B20F00 /* CGSize+Helper.swift */; };
+		89796D1E23E1521B00B20F00 /* AppFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89796D1D23E1521B00B20F00 /* AppFlowManager.swift */; };
+		89796D2023E1529D00B20F00 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89796D1F23E1529D00B20F00 /* RootViewController.swift */; };
+		8981955F24314D990096E39E /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981955E24314D990096E39E /* CameraOverlayView.swift */; };
+		89819561243153FF0096E39E /* CameraCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89819560243153FF0096E39E /* CameraCaptureButton.swift */; };
+		898195652431721C0096E39E /* CameraFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898195642431721C0096E39E /* CameraFlowManager.swift */; };
+		8981956724318D380096E39E /* CameraPostCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981956624318D380096E39E /* CameraPostCaptureViewController.swift */; };
+		89819569243194A70096E39E /* UIImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89819568243194A70096E39E /* UIImage+PixelBuffer.swift */; };
+		89CE001B247B7D4A00F0FE5E /* TasteSwipeCardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE001A247B7D4A00F0FE5E /* TasteSwipeCardImageView.swift */; };
+		89CE001D247B7F4400F0FE5E /* TasteSwipeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE001C247B7F4400F0FE5E /* TasteSwipeFooterView.swift */; };
+		89CE001F247B901A00F0FE5E /* TasteMasterFooterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE001E247B901A00F0FE5E /* TasteMasterFooterBarView.swift */; };
+		89DD97EC24721929005438D5 /* TasteStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD97EB24721929005438D5 /* TasteStackViewController.swift */; };
+		89F1265E2443EE0C00D270BA /* CameraPostCaptureOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F1265D2443EE0C00D270BA /* CameraPostCaptureOverlayView.swift */; };
+		89F7EDE323EFD07F004FDAB4 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7EDE223EFD07F004FDAB4 /* DrawerViewController.swift */; };
+		89F7EDE823EFEC99004FDAB4 /* UIColor+Faber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7EDE723EFEC99004FDAB4 /* UIColor+Faber.swift */; };
+		89F7EDEA23EFECC8004FDAB4 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7EDE923EFECC8004FDAB4 /* UIColor+Helper.swift */; };
+		89F7EDEC23EFEEED004FDAB4 /* DiscoveryListSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7EDEB23EFEEED004FDAB4 /* DiscoveryListSectionCell.swift */; };
+		921C0BC8983BAC79EFD493E2 /* Pods_FaberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DB4DB8F803DC440822049 /* Pods_FaberTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8933F60723C1453600A58D99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8933F5E823C1453600A58D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8933F5EF23C1453600A58D99;
+			remoteInfo = Faber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F7DB4DB8F803DC440822049 /* Pods_FaberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459DADD120C6349B2C2D2B42 /* Pods-FaberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaberTests.debug.xcconfig"; path = "Target Support Files/Pods-FaberTests/Pods-FaberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED90393411DFD1AF673CB33 /* Pods_Faber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8900516123E137ED001DCC89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		890E2C9423E163930034CE72 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		890E2C9623E1672A0034CE72 /* FirebaseDiscoveryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDiscoveryDataProvider.swift; sourceTree = "<group>"; };
+		890E2C9923E16AD60034CE72 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		891A468C2431AEA600444884 /* CameraInferenceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInferenceLabel.swift; sourceTree = "<group>"; };
+		891A468E2431B45C00444884 /* CameraInferenceStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInferenceStackView.swift; sourceTree = "<group>"; };
+		891D9B1123F12AAE004CA378 /* FaberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaberButton.swift; sourceTree = "<group>"; };
+		891D9B3823F13EE0004CA378 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		891D9B4623F13F39004CA378 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		891D9B4723F13F39004CA378 /* mobilenet_quant_v1_224.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobilenet_quant_v1_224.tflite; sourceTree = "<group>"; };
+		891D9B4A23F13F3F004CA378 /* ModelDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		8933F5F023C1453600A58D99 /* Faber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8933F5F323C1453600A58D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8933F5F723C1453600A58D99 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8933F5FC23C1453600A58D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8933F5FF23C1453600A58D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8933F60123C1453600A58D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8933F60623C1453600A58D99 /* FaberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8933F60A23C1453600A58D99 /* FaberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaberTests.swift; sourceTree = "<group>"; };
+		8933F60C23C1453600A58D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8933F61B23C1584700A58D99 /* DiscoveryRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryRootViewController.swift; sourceTree = "<group>"; };
+		8933F61E23C19B7B00A58D99 /* DiscoveryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryHeaderView.swift; sourceTree = "<group>"; };
+		8933F62123C19DB500A58D99 /* MockDiscoveryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDiscoveryDataProvider.swift; sourceTree = "<group>"; };
+		893A9EF723F0EFA100702079 /* YelpDiscoveryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpDiscoveryDataProvider.swift; sourceTree = "<group>"; };
+		893CEA472478BD74006291ED /* TasteDiscoveryNetworkSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteDiscoveryNetworkSource.swift; sourceTree = "<group>"; };
+		893CEA4B2478C232006291ED /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		893CEA4D2478D794006291ED /* TasteDiscoveryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteDiscoveryModel.swift; sourceTree = "<group>"; };
+		893CEA4F2478DCE4006291ED /* TasteSwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteSwipeCardView.swift; sourceTree = "<group>"; };
+		8948099223E29CFE00C20295 /* DiscoveryRecommendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryRecommendationModel.swift; sourceTree = "<group>"; };
+		8956020323C1B413009850F9 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
+		8956020723C1CAB8009850F9 /* DiscoveryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryListViewController.swift; sourceTree = "<group>"; };
+		8956020923C1CB91009850F9 /* DiscoveryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryDataProvider.swift; sourceTree = "<group>"; };
+		8956D98C241E007E00D732C7 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		8956D98E241E066700D732C7 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		895F6AAA2427FC4700EF2580 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		895F6AAC2427FF9500EF2580 /* CameraManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManagerDelegate.swift; sourceTree = "<group>"; };
+		895F6AAE242813DD00EF2580 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		89610882243123D600227456 /* CameraDummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDummyViewController.swift; sourceTree = "<group>"; };
+		8961088724312B6F00227456 /* CameraTFHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTFHandler.swift; sourceTree = "<group>"; };
+		896108892431362800227456 /* CompletionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionResult.swift; sourceTree = "<group>"; };
+		89796D0C23E14A6C00B20F00 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89796D1423E14FCF00B20F00 /* UIView+Sizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Sizing.swift"; sourceTree = "<group>"; };
+		89796D1823E150B800B20F00 /* GCD+DispatchAfter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCD+DispatchAfter.swift"; sourceTree = "<group>"; };
+		89796D1A23E1515100B20F00 /* CGSize+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Helper.swift"; sourceTree = "<group>"; };
+		89796D1D23E1521B00B20F00 /* AppFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowManager.swift; sourceTree = "<group>"; };
+		89796D1F23E1529D00B20F00 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8981955E24314D990096E39E /* CameraOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
+		89819560243153FF0096E39E /* CameraCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureButton.swift; sourceTree = "<group>"; };
+		898195642431721C0096E39E /* CameraFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowManager.swift; sourceTree = "<group>"; };
+		8981956624318D380096E39E /* CameraPostCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPostCaptureViewController.swift; sourceTree = "<group>"; };
+		89819568243194A70096E39E /* UIImage+PixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+PixelBuffer.swift"; sourceTree = "<group>"; };
+		89CE001A247B7D4A00F0FE5E /* TasteSwipeCardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteSwipeCardImageView.swift; sourceTree = "<group>"; };
+		89CE001C247B7F4400F0FE5E /* TasteSwipeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteSwipeFooterView.swift; sourceTree = "<group>"; };
+		89CE001E247B901A00F0FE5E /* TasteMasterFooterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteMasterFooterBarView.swift; sourceTree = "<group>"; };
+		89DD97EB24721929005438D5 /* TasteStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteStackViewController.swift; sourceTree = "<group>"; };
+		89F1265D2443EE0C00D270BA /* CameraPostCaptureOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPostCaptureOverlayView.swift; sourceTree = "<group>"; };
+		89F7EDE223EFD07F004FDAB4 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		89F7EDE723EFEC99004FDAB4 /* UIColor+Faber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Faber.swift"; sourceTree = "<group>"; };
+		89F7EDE923EFECC8004FDAB4 /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
+		89F7EDEB23EFEEED004FDAB4 /* DiscoveryListSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryListSectionCell.swift; sourceTree = "<group>"; };
+		9BFC96795C9EDBF6F5F21E16 /* Pods-Faber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faber.release.xcconfig"; path = "Target Support Files/Pods-Faber/Pods-Faber.release.xcconfig"; sourceTree = "<group>"; };
+		B7FC64C7F2383F3C2732F0DE /* Pods-FaberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaberTests.release.xcconfig"; path = "Target Support Files/Pods-FaberTests/Pods-FaberTests.release.xcconfig"; sourceTree = "<group>"; };
+		E17C433517246ADF42B39B01 /* Pods-Faber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faber.debug.xcconfig"; path = "Target Support Files/Pods-Faber/Pods-Faber.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8933F5ED23C1453600A58D99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C85DFB44F6DEA92ACB6621E /* Pods_Faber.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8933F60323C1453600A58D99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921C0BC8983BAC79EFD493E2 /* Pods_FaberTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1640CEF0A20EFC9AB9BF725B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED90393411DFD1AF673CB33 /* Pods_Faber.framework */,
+				0F7DB4DB8F803DC440822049 /* Pods_FaberTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8900516923E144A8001DCC89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89796D0C23E14A6C00B20F00 /* User.swift */,
+				8948099223E29CFE00C20295 /* DiscoveryRecommendationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		890E2C9823E16AB30034CE72 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				890E2C9923E16AD60034CE72 /* Dependencies.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		891D9B1323F13E6F004CA378 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				898195642431721C0096E39E /* CameraFlowManager.swift */,
+				89819563243171F40096E39E /* Controller */,
+				891D9B1423F13E9C004CA378 /* Imported */,
+				89819562243171EB0096E39E /* Views */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		891D9B1423F13E9C004CA378 /* Imported */ = {
+			isa = PBXGroup;
+			children = (
+				891D9B3723F13ED4004CA378 /* Extensions */,
+				891D9B3F23F13F16004CA378 /* Model */,
+				891D9B3C23F13F04004CA378 /* ModelDataHandler */,
+			);
+			path = Imported;
+			sourceTree = "<group>";
+		};
+		891D9B3723F13ED4004CA378 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				891D9B3823F13EE0004CA378 /* CVPixelBufferExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		891D9B3C23F13F04004CA378 /* ModelDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				891D9B4A23F13F3F004CA378 /* ModelDataHandler.swift */,
+			);
+			path = ModelDataHandler;
+			sourceTree = "<group>";
+		};
+		891D9B3F23F13F16004CA378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				891D9B4723F13F39004CA378 /* mobilenet_quant_v1_224.tflite */,
+				891D9B4623F13F39004CA378 /* labels.txt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8933F5E723C1453600A58D99 = {
+			isa = PBXGroup;
+			children = (
+				8933F5F223C1453600A58D99 /* Faber */,
+				8933F60923C1453600A58D99 /* FaberTests */,
+				8933F5F123C1453600A58D99 /* Products */,
+				CA2A23C8C7475796F0449384 /* Pods */,
+				1640CEF0A20EFC9AB9BF725B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8933F5F123C1453600A58D99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8933F5F023C1453600A58D99 /* Faber.app */,
+				8933F60623C1453600A58D99 /* FaberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8933F5F223C1453600A58D99 /* Faber */ = {
+			isa = PBXGroup;
+			children = (
+				8933F5F323C1453600A58D99 /* AppDelegate.swift */,
+				8933F5FC23C1453600A58D99 /* Assets.xcassets */,
+				8933F62023C19DA000A58D99 /* Data Providers */,
+				890E2C9823E16AB30034CE72 /* Dependency */,
+				8900516123E137ED001DCC89 /* GoogleService-Info.plist */,
+				89796D1323E14F5800B20F00 /* Helpers */,
+				8933F60123C1453600A58D99 /* Info.plist */,
+				8933F5FE23C1453600A58D99 /* LaunchScreen.storyboard */,
+				89796D1C23E1520800B20F00 /* Manager */,
+				8900516923E144A8001DCC89 /* Models */,
+				8933F61D23C1585600A58D99 /* ViewControllers */,
+				8956020223C1B3F9009850F9 /* Views */,
+				8956D98D241E064E00D732C7 /* Wrappers */,
+			);
+			path = Faber;
+			sourceTree = "<group>";
+		};
+		8933F60923C1453600A58D99 /* FaberTests */ = {
+			isa = PBXGroup;
+			children = (
+				8933F60A23C1453600A58D99 /* FaberTests.swift */,
+				8933F60C23C1453600A58D99 /* Info.plist */,
+			);
+			path = FaberTests;
+			sourceTree = "<group>";
+		};
+		8933F61D23C1585600A58D99 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89DD97EA2472144E005438D5 /* Tastes */,
+				891D9B1323F13E6F004CA378 /* Camera */,
+				89F819C123F14414000F1059 /* Profile */,
+				89F7EDE123EFD075004FDAB4 /* Infra */,
+				89F7EDE423EFD527004FDAB4 /* Discovery */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8933F62023C19DA000A58D99 /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+				8933F62123C19DB500A58D99 /* MockDiscoveryDataProvider.swift */,
+				893A9EF723F0EFA100702079 /* YelpDiscoveryDataProvider.swift */,
+				8956020923C1CB91009850F9 /* DiscoveryDataProvider.swift */,
+				890E2C9623E1672A0034CE72 /* FirebaseDiscoveryDataProvider.swift */,
+				893CEA4B2478C232006291ED /* NetworkConstants.swift */,
+			);
+			path = "Data Providers";
+			sourceTree = "<group>";
+		};
+		8956020223C1B3F9009850F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8956020323C1B413009850F9 /* ImageCollectionView.swift */,
+				891D9B1123F12AAE004CA378 /* FaberButton.swift */,
+				89F7EDEB23EFEEED004FDAB4 /* DiscoveryListSectionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8956D98D241E064E00D732C7 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				8956D98E241E066700D732C7 /* Log.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		89796D1323E14F5800B20F00 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				89796D1423E14FCF00B20F00 /* UIView+Sizing.swift */,
+				89F7EDE723EFEC99004FDAB4 /* UIColor+Faber.swift */,
+				89F7EDE923EFECC8004FDAB4 /* UIColor+Helper.swift */,
+				89796D1A23E1515100B20F00 /* CGSize+Helper.swift */,
+				89796D1823E150B800B20F00 /* GCD+DispatchAfter.swift */,
+				8956D98C241E007E00D732C7 /* Bridging.h */,
+				896108892431362800227456 /* CompletionResult.swift */,
+				89819568243194A70096E39E /* UIImage+PixelBuffer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		89796D1C23E1520800B20F00 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				89796D1D23E1521B00B20F00 /* AppFlowManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		89819562243171EB0096E39E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				891A468C2431AEA600444884 /* CameraInferenceLabel.swift */,
+				891A468E2431B45C00444884 /* CameraInferenceStackView.swift */,
+				89F1265C2443BBE700D270BA /* Postcapture */,
+				89F1265B2443BBDE00D270BA /* Precapture */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89819563243171F40096E39E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89610882243123D600227456 /* CameraDummyViewController.swift */,
+				895F6AAA2427FC4700EF2580 /* CameraManager.swift */,
+				895F6AAC2427FF9500EF2580 /* CameraManagerDelegate.swift */,
+				8961088724312B6F00227456 /* CameraTFHandler.swift */,
+				8933F5F723C1453600A58D99 /* CameraViewController.swift */,
+				8981956624318D380096E39E /* CameraPostCaptureViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89DD97EA2472144E005438D5 /* Tastes */ = {
+			isa = PBXGroup;
+			children = (
+				89DD97EB24721929005438D5 /* TasteStackViewController.swift */,
+				89CE001E247B901A00F0FE5E /* TasteMasterFooterBarView.swift */,
+				893CEA4F2478DCE4006291ED /* TasteSwipeCardView.swift */,
+				89CE001C247B7F4400F0FE5E /* TasteSwipeFooterView.swift */,
+				89CE001A247B7D4A00F0FE5E /* TasteSwipeCardImageView.swift */,
+				893CEA472478BD74006291ED /* TasteDiscoveryNetworkSource.swift */,
+				893CEA4D2478D794006291ED /* TasteDiscoveryModel.swift */,
+			);
+			path = Tastes;
+			sourceTree = "<group>";
+		};
+		89F1265B2443BBDE00D270BA /* Precapture */ = {
+			isa = PBXGroup;
+			children = (
+				89819560243153FF0096E39E /* CameraCaptureButton.swift */,
+				8981955E24314D990096E39E /* CameraOverlayView.swift */,
+				895F6AAE242813DD00EF2580 /* CameraPreviewView.swift */,
+			);
+			path = Precapture;
+			sourceTree = "<group>";
+		};
+		89F1265C2443BBE700D270BA /* Postcapture */ = {
+			isa = PBXGroup;
+			children = (
+				89F1265D2443EE0C00D270BA /* CameraPostCaptureOverlayView.swift */,
+			);
+			path = Postcapture;
+			sourceTree = "<group>";
+		};
+		89F7EDE123EFD075004FDAB4 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				89796D1F23E1529D00B20F00 /* RootViewController.swift */,
+				89F7EDE223EFD07F004FDAB4 /* DrawerViewController.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		89F7EDE423EFD527004FDAB4 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				8933F61B23C1584700A58D99 /* DiscoveryRootViewController.swift */,
+				8933F61E23C19B7B00A58D99 /* DiscoveryHeaderView.swift */,
+				8956020723C1CAB8009850F9 /* DiscoveryListViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		89F819C123F14414000F1059 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				890E2C9423E163930034CE72 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CA2A23C8C7475796F0449384 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E17C433517246ADF42B39B01 /* Pods-Faber.debug.xcconfig */,
+				9BFC96795C9EDBF6F5F21E16 /* Pods-Faber.release.xcconfig */,
+				459DADD120C6349B2C2D2B42 /* Pods-FaberTests.debug.xcconfig */,
+				B7FC64C7F2383F3C2732F0DE /* Pods-FaberTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8933F5EF23C1453600A58D99 /* Faber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8933F60F23C1453600A58D99 /* Build configuration list for PBXNativeTarget "Faber" */;
+			buildPhases = (
+				8243C3DF558576A9917838B3 /* [CP] Check Pods Manifest.lock */,
+				8933F5EC23C1453600A58D99 /* Sources */,
+				8933F5ED23C1453600A58D99 /* Frameworks */,
+				8933F5EE23C1453600A58D99 /* Resources */,
+				57C83C785EB18FF1CF727906 /* [CP] Embed Pods Frameworks */,
+				A13E74DF176435ECA1A26FDE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Faber;
+			productName = Faber;
+			productReference = 8933F5F023C1453600A58D99 /* Faber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8933F60523C1453600A58D99 /* FaberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8933F61223C1453600A58D99 /* Build configuration list for PBXNativeTarget "FaberTests" */;
+			buildPhases = (
+				48E6D4BA76AF119ECD89927E /* [CP] Check Pods Manifest.lock */,
+				8933F60223C1453600A58D99 /* Sources */,
+				8933F60323C1453600A58D99 /* Frameworks */,
+				8933F60423C1453600A58D99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8933F60823C1453600A58D99 /* PBXTargetDependency */,
+			);
+			name = FaberTests;
+			productName = FaberTests;
+			productReference = 8933F60623C1453600A58D99 /* FaberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8933F5E823C1453600A58D99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = faber;
+				TargetAttributes = {
+					8933F5EF23C1453600A58D99 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					8933F60523C1453600A58D99 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 8933F5EF23C1453600A58D99;
+					};
+				};
+			};
+			buildConfigurationList = 8933F5EB23C1453600A58D99 /* Build configuration list for PBXProject "Faber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8933F5E723C1453600A58D99;
+			productRefGroup = 8933F5F123C1453600A58D99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8933F5EF23C1453600A58D99 /* Faber */,
+				8933F60523C1453600A58D99 /* FaberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8933F5EE23C1453600A58D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933F60023C1453600A58D99 /* LaunchScreen.storyboard in Resources */,
+				891D9B4923F13F3A004CA378 /* mobilenet_quant_v1_224.tflite in Resources */,
+				8933F5FD23C1453600A58D99 /* Assets.xcassets in Resources */,
+				8900516223E137ED001DCC89 /* GoogleService-Info.plist in Resources */,
+				891D9B4823F13F3A004CA378 /* labels.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8933F60423C1453600A58D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48E6D4BA76AF119ECD89927E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaberTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57C83C785EB18FF1CF727906 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Faber/Pods-Faber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Faber/Pods-Faber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Faber/Pods-Faber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8243C3DF558576A9917838B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Faber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A13E74DF176435ECA1A26FDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Faber/Pods-Faber-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Faber/Pods-Faber-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Faber/Pods-Faber-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8933F5EC23C1453600A58D99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891D9B3923F13EE0004CA378 /* CVPixelBufferExtension.swift in Sources */,
+				8961088824312B6F00227456 /* CameraTFHandler.swift in Sources */,
+				898195652431721C0096E39E /* CameraFlowManager.swift in Sources */,
+				89DD97EC24721929005438D5 /* TasteStackViewController.swift in Sources */,
+				891D9B1223F12AAE004CA378 /* FaberButton.swift in Sources */,
+				8956D98F241E066700D732C7 /* Log.swift in Sources */,
+				8981956724318D380096E39E /* CameraPostCaptureViewController.swift in Sources */,
+				89796D1E23E1521B00B20F00 /* AppFlowManager.swift in Sources */,
+				8981955F24314D990096E39E /* CameraOverlayView.swift in Sources */,
+				89796D1923E150B800B20F00 /* GCD+DispatchAfter.swift in Sources */,
+				89F7EDE323EFD07F004FDAB4 /* DrawerViewController.swift in Sources */,
+				89610883243123D600227456 /* CameraDummyViewController.swift in Sources */,
+				893A9EF823F0EFA100702079 /* YelpDiscoveryDataProvider.swift in Sources */,
+				8933F61F23C19B7B00A58D99 /* DiscoveryHeaderView.swift in Sources */,
+				89819561243153FF0096E39E /* CameraCaptureButton.swift in Sources */,
+				8948099323E29CFE00C20295 /* DiscoveryRecommendationModel.swift in Sources */,
+				891D9B4B23F13F3F004CA378 /* ModelDataHandler.swift in Sources */,
+				890E2C9A23E16AD60034CE72 /* Dependencies.swift in Sources */,
+				8933F62223C19DB500A58D99 /* MockDiscoveryDataProvider.swift in Sources */,
+				891A468F2431B45C00444884 /* CameraInferenceStackView.swift in Sources */,
+				8933F5F823C1453600A58D99 /* CameraViewController.swift in Sources */,
+				895F6AAD2427FF9500EF2580 /* CameraManagerDelegate.swift in Sources */,
+				8956020A23C1CB91009850F9 /* DiscoveryDataProvider.swift in Sources */,
+				893CEA4E2478D794006291ED /* TasteDiscoveryModel.swift in Sources */,
+				89CE001D247B7F4400F0FE5E /* TasteSwipeFooterView.swift in Sources */,
+				895F6AAB2427FC4700EF2580 /* CameraManager.swift in Sources */,
+				893CEA4C2478C232006291ED /* NetworkConstants.swift in Sources */,
+				89819569243194A70096E39E /* UIImage+PixelBuffer.swift in Sources */,
+				89796D1523E14FCF00B20F00 /* UIView+Sizing.swift in Sources */,
+				89CE001F247B901A00F0FE5E /* TasteMasterFooterBarView.swift in Sources */,
+				895F6AAF242813DD00EF2580 /* CameraPreviewView.swift in Sources */,
+				893CEA502478DCE4006291ED /* TasteSwipeCardView.swift in Sources */,
+				8933F61C23C1584700A58D99 /* DiscoveryRootViewController.swift in Sources */,
+				89CE001B247B7D4A00F0FE5E /* TasteSwipeCardImageView.swift in Sources */,
+				89F7EDEA23EFECC8004FDAB4 /* UIColor+Helper.swift in Sources */,
+				8961088A2431362800227456 /* CompletionResult.swift in Sources */,
+				89F7EDEC23EFEEED004FDAB4 /* DiscoveryListSectionCell.swift in Sources */,
+				89796D0D23E14A6C00B20F00 /* User.swift in Sources */,
+				893CEA482478BD74006291ED /* TasteDiscoveryNetworkSource.swift in Sources */,
+				891A468D2431AEA600444884 /* CameraInferenceLabel.swift in Sources */,
+				8956020823C1CAB8009850F9 /* DiscoveryListViewController.swift in Sources */,
+				89796D2023E1529D00B20F00 /* RootViewController.swift in Sources */,
+				8956020423C1B413009850F9 /* ImageCollectionView.swift in Sources */,
+				890E2C9723E1672A0034CE72 /* FirebaseDiscoveryDataProvider.swift in Sources */,
+				890E2C9523E163930034CE72 /* ProfileViewController.swift in Sources */,
+				89796D1B23E1515100B20F00 /* CGSize+Helper.swift in Sources */,
+				89F7EDE823EFEC99004FDAB4 /* UIColor+Faber.swift in Sources */,
+				8933F5F423C1453600A58D99 /* AppDelegate.swift in Sources */,
+				89F1265E2443EE0C00D270BA /* CameraPostCaptureOverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8933F60223C1453600A58D99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933F60B23C1453600A58D99 /* FaberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8933F60823C1453600A58D99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8933F5EF23C1453600A58D99 /* Faber */;
+			targetProxy = 8933F60723C1453600A58D99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8933F5FE23C1453600A58D99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8933F5FF23C1453600A58D99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8933F60D23C1453600A58D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8933F60E23C1453600A58D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8933F61023C1453600A58D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E17C433517246ADF42B39B01 /* Pods-Faber.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development: Vincent Ho (U2GJ52RDEY)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E25KDQN5TT;
+				INFOPLIST_FILE = Faber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.faberlabs.Faber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = faber_imac_development;
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/Faber/Helpers/Bridging.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8933F61123C1453600A58D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFC96795C9EDBF6F5F21E16 /* Pods-Faber.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vincent Ho (E25KDQN5TT)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E25KDQN5TT;
+				INFOPLIST_FILE = Faber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.faberlabs.Faber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = faber_imac_adhoc_distribution;
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/Faber/Helpers/Bridging.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8933F61323C1453600A58D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459DADD120C6349B2C2D2B42 /* Pods-FaberTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaberTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.faberlabs.FaberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Faber.app/Faber";
+			};
+			name = Debug;
+		};
+		8933F61423C1453600A58D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FC64C7F2383F3C2732F0DE /* Pods-FaberTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaberTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.faberlabs.FaberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Faber.app/Faber";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8933F5EB23C1453600A58D99 /* Build configuration list for PBXProject "Faber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8933F60D23C1453600A58D99 /* Debug */,
+				8933F60E23C1453600A58D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8933F60F23C1453600A58D99 /* Build configuration list for PBXNativeTarget "Faber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8933F61023C1453600A58D99 /* Debug */,
+				8933F61123C1453600A58D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8933F61223C1453600A58D99 /* Build configuration list for PBXNativeTarget "FaberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8933F61323C1453600A58D99 /* Debug */,
+				8933F61423C1453600A58D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8933F5E823C1453600A58D99 /* Project object */;
+}

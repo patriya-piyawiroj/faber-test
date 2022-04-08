@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'FoodCamera' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Alamofire', '~> 5.0'
+
+  # Pods for FoodCamera
+  pod 'SDWebImageSwiftUI'
+  pod 'Alamofire', '~> 5.0'
+  pod 'SwiftyJSON', '~> 4.0'
+  
+  
+  target 'FoodCameraTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'SDWebImageSwiftUI'
+  end
+
+end
